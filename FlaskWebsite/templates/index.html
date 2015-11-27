@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="jumbotron">
+    <h1>Trivia App</h1>
+    <p class="lead">Come together to ask and answer questions from the community.</p>
+    <p><a href="http://devblog.azurewebsites.net" class="btn btn-primary btn-large"> Visit my blog.</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Getting started</h2>
+        <p>
+            To start asking questions just click the button below.
+            Please remember: Only trivia, no rude or offensive questions. Be considerate!
+        </p>
+        <p><a class="btn btn-default" href="/create">Create a question &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Answer questions</h2>
+        <p>To answer questions from the community just click the button below. On this page there are all the questions the community has created.
+        Some kind of point system will be introduced later.</p>
+        <p><a class="btn btn-default" href="/rquestion/">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Learn Flask Webdevelopment</h2>
+        <p>Flask is a great tool to develop websites with Python. To learn how I did it, watch the MVA Course on Python and Flask.</p>
+        <p> <a class="btn btn-default" 
+               href="http://www.microsoftvirtualacademy.com/training-courses/introduction-to-creating-websites-using-python-and-flask"
+               >MVA Course: Python and Flask &raquo;</a>
+        </p>
+    </div>
+</div>
+
+{% endblock %}
